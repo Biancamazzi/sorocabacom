@@ -1,0 +1,22 @@
+.header{
+    background-color: #363636;
+    color: white;
+}
+.logo{
+    text-align: right;
+}
+.apresentacao-game{
+    background-image: url(img/bg-woman1.png);
+}
+.imagem-principal{
+    text-align: center;
+}
+.personagens{
+    background-color: #363636;
+}
+.formulario{
+    background-color: #63C7A9;
+}
+form{
+    background-color: white;
+}
