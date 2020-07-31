@@ -1,3 +1,11 @@
+body, .conteiner-fluid{
+    background-color: #363636;
+}
+
+h3{
+    font-family: 'Montserrat';    
+}
+
 .header{
     background-color: #363636;
     color: white;
@@ -5,18 +13,164 @@
 .logo{
     text-align: right;
 }
+.marca h3{
+    display: flex;
+    margin-top: 36px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 22.5px;
+}
 .apresentacao-game{
-    background-image: url(img/bg-woman1.png);
+    background-image: url(img/bg-woman1.png);    
+    background-position: center;
+    height: 1080px;
+    margin-bottom: -13px;
+}
+.red-personagem{
+    padding: 10px 0px 0px 0px;
+    margin-left: 30px;
+    font-size: 17px;
+    font-family: 'Open Sans';
+    color: #FFFFFF;
+}
+.frase-red-personagem{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: #F0F0F2;
+    text-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
 }
 .imagem-principal{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #F0F0F2;
+}
+.bg-red{
+    background-image: url(img/bg-red.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+}
+.imagem-principal img{
+    height: 903px;
 }
 .personagens{
     background-color: #363636;
+    height: 900px;
+}
+.detalhe-personagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #363636;    
+}
+.white-border{
+    background: #363636 0% 0% no-repeat padding-box;
+    border: 3px solid #FFFFFF;
+    border-radius: 86px;
+    width: 314px;
+    height: 356px;
+    z-index: 1;
+}
+.personagem-text{
+    width: 350px;
+    height: 450px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FFFFFF63;
+    border-radius: 31px;
+    padding: 25px;
+    position: absolute;
+    z-index: 0;
+    top: 332px;
+    padding-top: 300px;
+}
+.personagens img{
+    width: 72%;
+    position: absolute;
+    top: 188px;
+    z-index: 2;
+    opacity: 1;
+    
+}
+.personagens span{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FFFFFF63;
+    border-radius: 27px;
+    opacity: 1;
 }
 .formulario{
-    background-color: #63C7A9;
+    background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 550px;
 }
-form{
-    background-color: white;
+.posicao-form{
+    text-align: -webkit-center;
+}
+.nome{
+    text-align: right;
+}
+.email{
+    text-align:left
+}
+.mensagem{
+    margin-top: 20px;
+}
+.bg-form{
+    width: 70%;
+    height: 588px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #0000004D;
+    opacity: 1;
+    padding: 20px 35px 20px 35px;
+    position: relative;
+    z-index: 1;
+    margin-top: -20px;
+}
+.bg-form h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    letter-spacing: -0.88px;
+    color: #63C7A9
+}
+.bg-form p{
+    text-align: left;
+    font-size:  20px;
+    font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: #363636;
+    opacity: 1;
+    padding-top: 20px;
+}
+.start-form{
+    padding-top: 30px;
+}
+input, textarea{
+    border: 1px solid #363636;
+    height: 48px;
+}
+textarea{
+    width: 414px;
+    height: 197px;
+    
+}
+.up{
+    background: #363636 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 200px;
+    
+}
+.up p{
+    margin-left: auto;
+    width: 107px;
+    height: 107px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 2px solid #363636;
 }
