@@ -12,20 +12,21 @@ h3{
     color: white;
 }
 .logo{
-    text-align: right;
-}
-.marca h3{
     display: flex;
-    margin-top: 36px;
+    align-items: center;
+    place-content: center;
+}
+
+.marca{
+    display: flex;
     font-family: 'Montserrat', sans-serif;;
     font-weight: bold;
     font-size: 22.5px;
 }
 .apresentacao-game{
-    background-image: url(img/bg-woman1.png);    
-    background-position: center;
-    height: 1080px;
-    margin-bottom: -13px;
+    background-image: url(img/bg-woman1.png);
+    background-position: left -110px;
+    height: 970px; 
 }
 .red-personagem{
     padding: 10px 0px 0px 0px;
@@ -42,10 +43,14 @@ h3{
     color: #F0F0F2;
     text-shadow: 0px 3px 6px #00000029;
     opacity: 1;
-    margin-top: 42px;
+    margin-top: 32px;
+    position: absolute;
+    bottom: 30px;
+    left: 165px;
 }
 .personagem-principal{
-    height: 859px;
+    width: 526px;
+    height: 754px;
     margin: 0px 25px;
 }
 .imagem-principal{
@@ -54,26 +59,26 @@ h3{
     color: #F0F0F2;
 }
 .pena1{
-    width: 10%;
-    position: absolute;
+    width: 30%;
+    position: relative;
 }
 .left1{
-    top: 415px;
-    left: 301px;
+    left: -65px;
+    bottom: 443px;
 }
 .left2{
-    top: 531px;
-    left: 354px;
+    left: 9px;
+    bottom: 456px;
+    width: 20%;
 }
 .right1{
-    right: 325px;
-    top: 335px;
-    width: 16%;
+    bottom: 757px;
+    left: 402px;
+    width: 33%;
 }
 .right2{
-    top: 540px;
-    right: 292px;
-    width: 11%;
+    left: 488px;
+    bottom: 760px;
 }
 .bg-red{
     background-image: url(img/bg-red.png);
@@ -83,6 +88,8 @@ h3{
     display: flex;
     flex-direction: column;
     margin-top: 0px;
+    height: 970px;
+    position: relative;
 }
 
 
@@ -107,22 +114,20 @@ h3{
     font-weight: bold;
     border-radius: 15px;
     position: relative;
-    top: -10px;
+    top: -25px;
     z-index: 1;
 }
 .down{
     display: flex;
-    flex-direction: column-reverse;
     color: white;
-    font-family: monospace;
-    font-weight: 100;
+    font-family: unset;
     position: relative;
-    top: -29px;
-    right: -11px;
+    top: -42px;
+    right: -7.5px;
 }
 .personagens{
     background-color: #363636;
-    height: 850px;
+    height: 1100px;
 }
 .men{
     margin-left: 2px;
@@ -143,32 +148,41 @@ h3{
     align-items: center;
     padding-top: 130px;
     color: #363636;    
-    margin-right: 50px;
+    margin-right: -6px;
 }
 .white-border{
     background: #363636 0% 0% no-repeat padding-box;
     border: 3px solid #FFFFFF;
     border-radius: 86px;
-    width: 314px;
-    height: 356px;
+    width: 363px;
+    height: 440px;
     z-index: 1;
 }
+
 .personagem-text{
-    width: 350px;
-    height: 450px;
+    width: 387px;
+    height: 600px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #FFFFFF63;
     border-radius: 31px;
     padding: 25px;
     position: absolute;
     z-index: 0;
-    top: 195px;
-    padding-top: 300px;
+    top: 230px;
+    padding-top: 360px;
 }
+
+.personagem-text p {
+    font-size: 20px;
+    line-height: 25px;
+}
+
 .personagens img{
-    width: 95%;
+
     position: absolute;
-    top: 49px;
+    width: 379px;
+    height: 525px;
+    top: 51px;
     z-index: 2;
     opacity: 1;
     
@@ -182,7 +196,7 @@ h3{
 .formulario{
     background: transparent linear-gradient(143deg, #7DEDE2 0%, #58B790 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
-    height: 550px;
+    height: 750px;
 }
 .posicao-form{
     text-align: -webkit-center;
@@ -197,12 +211,12 @@ h3{
     margin-top: 20px;
 }
 .form-button{
-    padding: 10px;
-    margin-left: 128px !important;
+    padding: 30px 10px;
+    margin-left: 208px !important;
 }
 .bg-form{
-    width: 70%;
-    height: 640px;
+    width: 1082px;
+    height: 832px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 6px #0000004D;
     opacity: 1;
@@ -210,6 +224,7 @@ h3{
     position: relative;
     z-index: 1;
     margin-top: -40px;
+    border-radius: 9px;
 }
 .bg-form h3{
     text-align: center;
@@ -217,7 +232,9 @@ h3{
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;;
     letter-spacing: -0.88px;
-    color: #63C7A9
+    color: #63C7A9;
+    text-transform: uppercase;
+    padding-top: 40px;
 }
 .bg-form p{
     text-align: left;
@@ -226,7 +243,7 @@ h3{
     letter-spacing: 0px;
     color: #363636;
     opacity: 1;
-    padding-top: 20px;
+    padding: 20px 92px;
 }
 .start-form{
     padding-top: 30px;
@@ -255,7 +272,7 @@ button{
 .up{
     background: #363636 0% 0% no-repeat padding-box;
     opacity: 1;
-    height: 200px;
+    height: 410px;
     
 }
 .up-border{
@@ -267,18 +284,19 @@ button{
 }
 .up p{
     margin-left: auto;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    font-size: 51px;
+    width: 107px;
+    height: 107px;
+    border-radius: 53px;
+    font-size: 109px;
     font-weight: 100;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     border: 2px solid #363636;
-    padding: 18px 0px 8px 11px;
+    padding-top: 23px;
     font-family: serif;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* TABLET */
@@ -286,30 +304,41 @@ button{
     .pena1{
         display: none;
     }
+    .personagens{
+        height: 1915px;
+    }
+    .personagem-principal{
+        width: 100%;
+    }
     
     .detalhe-personagem{
-        margin-right: 27px;
+        margin-right: 10px;
+        margin-left: 0;
+        padding-top: 0;
+        margin-bottom: 279px;
     }
-    .seta{
-        font-size: 40px;
+    .arrow, .seta {
+        display: none;
     }
     .white-border {
         height: 292px;
-        width: 100%;
     }
     .personagem-text {
-        width: 100%;
-        height: 511px;
-        padding: 12px;
-        padding-top: 233px;
+        width: 50%;
+        height: 411px;
+        padding: 41px;
+        padding-top: 209px;
+        top: 114px;
+    
     }
     .personagens img {
-        width: 90%;
-        top: 152px;
+        width: 140px;
+        height: 250px;
+        top: 45px;
     }
     .bg-form {
         width: 83%;
-        height: 640px;       
+        height: 823px;     
         padding: 30px;       
     }
     .form-button {
@@ -322,12 +351,12 @@ button{
   
   /* MOBILE */
   @media (max-width: 640px) {
-      .marca h3{
-        margin-top: 44px;
-        font-size: 15px
+      .marca{
+        font-size: 17px
       }
       .personagem-principal {
         height: 400px;
+        width: 255px;
     }
     .apresentacao-game{
         height: 530px;
@@ -341,10 +370,16 @@ button{
       }
       .frase-red-personagem{
         font-size: 11px;
-        margin-top: 0
+        bottom: 21px;
+        left: 78px;
       }
+      .personagens {
+        height: 1395px;
+        padding-top: 31px;
+    }
       .white-border{
-          height: 90%;
+        height: 203px;
+        width: 258px;
       }
       .detalhe-personagem{
           margin-right: 4px;
@@ -352,15 +387,16 @@ button{
           margin-bottom: 150px;
       }
       .personagens img {
-        width: 35%;
-        top: -31px;
+        width: 153px;
+        height: 237px;
+        top: -33px;
     }
     .personagem-text {
-        width: 100%;
-        height: 211px;
+        width: 88%;
+        height: 304px;
         padding: 25px;
-        padding-top: 92px;
-        top: 34px;
+        padding-top: 138px;
+        top: 77px;
     }
     .arrow, .seta {
         display: none;
@@ -377,11 +413,15 @@ button{
 
     }
     .bg-form{
-        margin-top: 0px;
-        height: 550px;
+        margin-top: 45px;
+        height: 625px;
+        width: 100%;
+    }
+    .bg-form h3{
+        font-size: 33px;
     }
     .bg-form p{
-        padding-top: 0;
+        padding:0;
     }
     .start-form{
         padding-top: 0px;
@@ -392,7 +432,16 @@ button{
     .form-button {
         margin-left: 10px !important;
     }
+    .up{
+        height: 200px;
+    }
     .up-border {
         margin: 23px;
     }
+    .up p {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 53px;        
+        padding-top: 15px;
   }
