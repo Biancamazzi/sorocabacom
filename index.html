@@ -7,12 +7,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script type="text/javascript" src="main.js"></script>
 
 </head>
 <body>
     <div class="container-fluid">
         <section>
-					<div class="row header">
+					<div class="row header" id="header">
 						<div class="col-5 logo">
 							<img src="img/logo.png" alt="logo da marca">
 						</div>
@@ -22,56 +23,58 @@
 					</div>					
 				</section>
         <section>
-			<div class="row apresentacao-game">						
-				<div class="col-12 imagem-principal">
-          <div class="bg-red">
-            <p class="red-personagem">TRANSISTOR - RED THE SINGER</p>
-            <img class="personagem-principal" src="img/woman1.png" alt="personagem principal">
-            <!-- <img class="pena1 src="img/pena1.png" alt="pena">
-            <img class="pena1 src="img/pena2.png" alt="pena">
-            <img class="pena1 src="img/pena3.png" alt="pena">
-            <img class="pena1 src="img/pena4.png" alt="pena"> -->
-            <p class="frase-red-personagem">"Olha, o que quer que você <br>
-               esteja pensando, me faça <br>
-                um favor, não solte."</p>	            
+			  <div class="row apresentacao-game">						
+				  <div class="col-12 imagem-principal">
+            <div class="bg-red">
+              <p class="red-personagem">TRANSISTOR - RED THE SINGER</p>
+              <img class="personagem-principal" src="img/woman1.png" alt="personagem principal">
+              <img class="pena1 left1" src="img/pena1.png" alt="pena">
+              <img class="pena1 left2" src="img/pena2.png" alt="pena">
+              <img class="pena1 right1" src="img/pena3.png" alt="pena">
+              <img class="pena1 right2" src="img/pena4.png" alt="pena">
+              <p class="frase-red-personagem">"Olha, o que quer que você <br>
+                esteja pensando, me faça <br>
+                  um favor, não solte."</p>	            
           </div>          
 				</div>
       </div>
       <div class="row">
         <div class="col-12 transicao-personagens">
+          <a href="#personagens">
           <p class="transicao">'</p>
           <p class="down">v</p>
+        </a>
         </div>
 
       </div>
 				</section>
         <section>
-					<div class="row personagens"> 
-            <div class="col-1">
+					<div class="row personagens" id="personagens"> 
+            <div class="col-1 arrow">
               <div class="seta"><</div>
             </div>           
-						<div class="col-3 detalhe-personagem men">
+						<div class="col-md-3 col-sm-12 detalhe-personagem men">
               <div class="white-border"></div>
               <img src="img/men.png" alt="personagem masculino do jogo">
               <div class="personagem-text">
                 <p>A Camerata foi apenas os dois no início, e suas fileiras nunca foram destinadas a exceder um número a ser contado em uma mão.</p>
               </div>
 						</div>
-						<div class="col-3 detalhe-personagem">
+						<div class="col-md-3 col-sm-12 detalhe-personagem">
               <div class="white-border"></div>
               <img src="img/woman2.png" alt="personagem feminina do jogo">
               <div class="personagem-text">
                 <p>Red, uma jovem cantora, entrou em posse do Transistor. Sendo a poderosa espada falante. O grupo Possessores quer tanto ela quanto o Transistor e está perseguindo implacavelmente a sua procura.</p>
               </div>
 						</div>
-						<div class="col-3 detalhe-personagem no-margin">
+						<div class="col-md-3 col-sm-12 detalhe-personagem no-margin">
               <div class="white-border"></div>
               <img src="img/woman3.png" alt="outra personagem feminina do jogo">
               <div class="personagem-text">
                 <p>Sybil é descrita pelo Transistor como sendo os "olhos e ouvidos" da Camerata.</p>
               </div>
             </div>
-            <div class="col-1">
+            <div class="col-1 arrow">
               <div class="seta">></div>
             </div>  						
 					</div>
@@ -80,18 +83,18 @@
 					<div class="row formulario">
 						<div class="col-12 posicao-form">
               <div class="bg-form">
-                <h3>Formulario</h3>
+                <h3>Formulário</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div class="start-form">
-                  <form action="" method="post"></form>
+                  <form action="" method="post"> 
                   <div class="row">
-                    <div class="col-6 nome">                    
+                    <div class="col-md-6  col-sm-12nome">                    
                         <label for="nome"></label>
-                        <input type="text" id="nome" placeholder="Nome" />                  
+                        <input type="text" required="required"" id="nome" placeholder="Nome" />                  
                     </div>
-                    <div class="col-6 email">
+                    <div class="col-md-6 col-sm-12 email">
                         <label for="email"></label>
-                        <input type="email" id="email" placeholder="Email" />
+                        <input type="email" required="required" id="email" placeholder="Email" />
                     </div>
                   </div>
                   <div class="row">
@@ -99,10 +102,9 @@
                       <label for="msg"></label>
                       <textarea id="msg" placeholder="Mensagem"></textarea>
                     </div>
-                    <div class="col-10 offset-2 form-button">
-                      <button type="submit" name="button" value="foo">Enviar</button>
+                    <div class="col-md-10 col-md-offset-2 col-sm-12  col-sm-offset-0 form-button">
+                      <button type="submit" name="button" class="enviar" onclick="Enviar();" value="Enviar">Enviar</button>
                     </div>
-
                   </div>
                 </form>
               </div>
@@ -114,14 +116,14 @@
           <div class="row">
             <div class="col-12 up">
               <div class="up-border">
-                <p>^</p>
-
+                <a class="up-border-a" href="#header">
+                  <p>^</p>
+                </a>
               </div>
             </div>
           </div>
         </section>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
