@@ -1,9 +1,7 @@
 function Enviar() {
-
-    var nome = document.getElementById("nome");
-
-    if (nome.value != "") {
-        alert('Obrigado' + nome.value + ' os seus dados foram encaminhados com sucesso');
-    }
-
+    const nome = $("#nome").val();
+    $("form").hide();
+    $('.start-form').html(`
+        <h3>${nome}, formulário enviado com sucesso!</h3>
+    `)
 }
