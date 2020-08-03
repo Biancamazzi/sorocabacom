@@ -187,7 +187,20 @@
   .men {
     margin-left: 2px;
   }
+
+  #personagem-carrosel{
+    width:90%;
+    margin: 0 auto;
+  }
   
+  .slick-prev {
+      left: -50px !important;
+  }
+
+  .arrow:before {
+      content: none !important;
+  }
+
   .arrow {
     justify-content: center;
     align-items: center;
@@ -207,12 +220,12 @@
   }
   
   .detalhe-personagem {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     padding-top: 130px;
     color: #363636;
-    margin-right: -6px;
+    margin-right: 3px;
   }
   
   .white-border {
@@ -385,14 +398,18 @@
   
   @media (max-width: 1024px) {
     .personagens {
-      height: 1915px;
-      padding-top: 120px;
+      height: 865px;
+      padding-top: 90px;
     }
     .detalhe-personagem {
       margin-right: 10px;
-      margin-left: 0;
       padding-top: 0;
       margin-bottom: 279px;
+      top: 30px;
+    }
+    #personagem-carrosel{
+        width:100%;
+        height: 675px;
     }
     .arrow,
     .seta {
@@ -424,6 +441,10 @@
     .up-border {
       margin: 85px;
     }
+    .slick-dots li button{
+        background-color:#F0F0F2 !important; 
+        border-radius: 32px;
+    }
   }
 
   /* IPAD PRO */
@@ -433,7 +454,7 @@
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .personagens {
-        height: 900px;
+        height: 850px;
     } 
     .personagens img {
         width: 220px;
@@ -451,7 +472,12 @@
     }
     .detalhe-personagem{
         margin-right: 0;
-        margin-left: 43px;
+        margin-left: 10px;
+        left: -15px;
+    }
+    .slick-dots li button{
+        background-color:#F0F0F2 !important; 
+        border-radius: 32px;
     }
 
 }
@@ -461,11 +487,15 @@
   
   @media (max-width: 640px) {
     .marca {
-      font-size: 17px
+      font-size: 15px
     }
     .personagem-principal {
       height: 400px;
       width: 280px;
+    }
+    #personagem-carrosel{
+        width:100%;
+        height: 430px;
     }
     .apresentacao-game {
       height: 530px;
@@ -476,19 +506,24 @@
     .bg-red {
       width: 100%;
       height: 530px;
+      margin-top: -3px;
       display: flex;
       align-items: center
     }
+    .red-personagem{
+        margin-left: 0;
+    }
     .frase-red-personagem {
-      font-size: 11px;
-      bottom: 10px;
-      left: 105px;
+        position: relative;
+        font-size: 11px;
+        bottom: 10px;
+        left: 0px;
     }
     .transicao-personagens {
       display: none;
     }
     .personagens {
-      height: 1395px;
+      height: 550px;
       padding-top: 60px;
     }
     .apresentacao-game {
@@ -502,6 +537,7 @@
       margin-right: 4px;
       padding-top: 0px;
       margin-bottom: 150px;
+      top: 30px;
     }
     .personagens img {
       width: 153px;
@@ -518,6 +554,10 @@
     .arrow,
     .seta {
       display: none;
+    }
+    .slick-dots li button{
+        background-color:#F0F0F2 !important; 
+        border-radius: 32px;
     }
     .bg-form p {
       font-size: 12px;
@@ -564,3 +604,8 @@
       padding-top: 15px;
     }
   }
+  @media (max-width: 600px){    
+    #personagem-carrosel {
+        height: 442px;
+    }
+}
